@@ -52,8 +52,9 @@ button {
 .header-container {
     display: flex;
     align-items: center;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
-
+        
 .nav {
     display: flex;
     align-items: center;
@@ -70,19 +71,36 @@ button {
 }
 
 .nav-link {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 24px;
     padding-bottom: 24px;
     align-self: flex-end;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* margin-bottom: 20px; */
 }
+
+/* .nav-link::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0; 
+    bottom: -1px;
+    height: 4px;
+    background-color: #404BBF;
+    border-radius: 2px;
+} */
 
 .nav-link:active::after {
     content: "";
     border-radius: 2px;
     height: 4px;
     background-color: #404BBF;
+    width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
 }
 
 .sol-container {
