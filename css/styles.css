@@ -25,7 +25,7 @@ button:hover {
     margin: 0 auto;
 }
 
-img {
+img, svg {
     display: block
 }
 /* reset-css */
@@ -70,9 +70,19 @@ button {
 }
 
 .nav-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 24px;
     padding-bottom: 24px;
+    align-self: flex-end;
+    /* margin-bottom: 20px; */
+}
+
+.nav-link:active::after {
+    content: "";
+    border-radius: 2px;
+    height: 4px;
+    background-color: #404BBF;
 }
 
 .sol-container {
@@ -123,6 +133,13 @@ button {
 /* main css */
 .solution-sec {
     background-color: #2E2F42;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+    background-repeat:no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+   
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -172,6 +189,25 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+.goals-icon-conteiner {
+    background-color: #F4F4FD;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+
+}
+
+.icon-goals {
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .goals-list {
     display: flex;
     gap: 24px;
