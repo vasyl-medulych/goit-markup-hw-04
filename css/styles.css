@@ -81,26 +81,19 @@ button {
     /* margin-bottom: 20px; */
 }
 
-/* .nav-link::after {
+.nav-link::after {
     content: '';
     width: 100%;
     position: absolute;
     left: 0; 
     bottom: -1px;
     height: 4px;
-    background-color: #404BBF;
+    background-color: #Fff;
     border-radius: 2px;
-} */
+}
 
-.nav-link:active::after {
-    content: "";
-    border-radius: 2px;
-    height: 4px;
+.nav-link:hover:after {
     background-color: #404BBF;
-    width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
 }
 
 .sol-container {
@@ -160,6 +153,9 @@ button {
    
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .solution {
@@ -190,6 +186,7 @@ button {
     height: 56px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .goals-section {
     margin: 0 auto;
