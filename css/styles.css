@@ -303,6 +303,7 @@ button {
 }
 
 .card-social-item {
+
 }
 
 .card-social-link {
@@ -392,11 +393,14 @@ button {
     transform: translatey(0);
 }
 
-.portfolio-overlay p {font-weight: 400;
+.portfolio-overlay-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--light);}
+    color: var(--light);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .porfolio-div {
     border-bottom: 1px solid var(--accent);
