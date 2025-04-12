@@ -288,7 +288,8 @@ button {
 }
 
 .card-content {
-    padding: 32px 0 32px;
+    padding: 32px 0;
+    justify-content: center;
 }
 
 .card-social-list {
