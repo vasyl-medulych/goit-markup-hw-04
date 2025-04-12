@@ -298,11 +298,8 @@ button {
 }
 
 .card-social-item {
-} 
-
-
-
 }
+
 .card-social-link {
     display: flex;
     align-items: center;
@@ -322,6 +319,7 @@ button {
 .card-social-link:hover,
 .card-social-link:focus {
     background-color: #404BBF;
+}
 
 .team-name {
     font-weight: 500;
