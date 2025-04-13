@@ -428,13 +428,13 @@ button {
         padding-top: 100px;
 }
 
-.footer-list {
+.footer-div {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
 }
 
-.footer-item {
-
+.footer-div-logo {
+    margin-right: 120px;
 }
 
 .footer-social-header {
